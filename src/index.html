@@ -25,24 +25,33 @@
           </div>
           
           <!-- Desktop Menu -->
-          <div class="hidden md:block">
-            <div class="ml-10 flex items-baseline space-x-4 font-mono text-sm">
-              <a href="#about" class="text-slate-light hover:text-teal px-3 py-2 rounded-md transition">
-                <span class="text-teal mr-1">01.</span> About
-              </a>
-              <a href="#experience" class="text-slate-light hover:text-teal px-3 py-2 rounded-md transition">
-                <span class="text-teal mr-1">02.</span> Experience
-              </a>
-              <a href="#contact" class="text-slate-light hover:text-teal px-3 py-2 rounded-md transition">
-                <span class="text-teal mr-1">03.</span> Contact
-              </a>
-              <a href="#" class="border border-teal text-teal hover:bg-teal/10 px-4 py-2 rounded transition">
-                Resume
-              </a>
-            </div>
-          </div>
-
-          <!-- Mobile Menu Button -->
+          <!-- Desktop Menu -->
+           
+<!-- Desktop Menu -->
+<div class="hidden md:block">
+  <div class="ml-10 flex items-baseline space-x-4 font-mono text-sm">
+    <a href="#about" class="text-slate-light hover:text-teal px-3 py-2 rounded-md transition">
+      <span class="text-teal mr-1">01.</span> About
+    </a>
+    <a href="#experience" class="text-slate-light hover:text-teal px-3 py-2 rounded-md transition">
+      <span class="text-teal mr-1">02.</span> Experience
+    </a>
+    <a href="#contact" class="text-slate-light hover:text-teal px-3 py-2 rounded-md transition">
+      <span class="text-teal mr-1">03.</span> Contact
+    </a>
+    
+    <!-- ✨ UPDATED: Resume Link (Google Docs/PDF) -->
+    <a 
+      href="https://docs.google.com/document/d/1E56OACkdkMjzQJ8Up1eo23UZrTk_BokGYV1-s77N7sI/edit?usp=sharing" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      class="border border-teal text-teal hover:bg-teal/10 px-4 py-2 rounded transition flex items-center gap-1"
+    >
+      <i class="fa-solid fa-file-pdf text-xs"></i>
+      Resume
+    </a>
+  </div>
+</div><!-- Mobile Menu Button -->
           <div class="-mr-2 flex md:hidden">
             <button type="button" id="mobile-menu-btn" class="text-slate-light hover:text-teal p-2">
               <i class="fa-solid fa-bars text-2xl"></i>
@@ -50,16 +59,23 @@
           </div>
         </div>
       </div>
-
-      <!-- Mobile Menu (Hidden by default) -->
-      <div class="md:hidden hidden bg-navy-800" id="mobile-menu">
-        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center font-mono">
-          <a href="#about" class="text-slate-light hover:text-teal block px-3 py-2 rounded-md text-base font-medium">01. About</a>
-          <a href="#experience" class="text-slate-light hover:text-teal block px-3 py-2 rounded-md text-base font-medium">02. Experience</a>
-          <a href="#contact" class="text-slate-light hover:text-teal block px-3 py-2 rounded-md text-base font-medium">03. Contact</a>
-        </div>
-      </div>
-    </nav>
+<div class="md:hidden hidden bg-navy-800" id="mobile-menu">
+  <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center font-mono">
+    <a href="#about" class="text-slate-light hover:text-teal block px-3 py-2 rounded-md text-base font-medium">01. About</a>
+    <a href="#experience" class="text-slate-light hover:text-teal block px-3 py-2 rounded-md text-base font-medium">02. Experience</a>
+    <a href="#contact" class="text-slate-light hover:text-teal block px-3 py-2 rounded-md text-base font-medium">03. Contact</a>
+    
+    <!-- ✨ Mobile Resume Link -->
+    <a 
+      href="https://docs.google.com/document/d/YOUR_DOC_ID/export?format=pdf" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      class="text-teal hover:bg-teal/10 block px-3 py-2 rounded-md text-base font-medium"
+    >
+      <i class="fa-solid fa-file-pdf mr-1"></i> Resume
+    </a>
+  </div>
+</div>
 
     <!-- HEADER / HERO SECTION -->
     <!-- HEADER / HERO SECTION -->
@@ -73,22 +89,26 @@
     </p>
     
     <!-- Button Group -->
-    <div class="flex flex-wrap gap-4">
-      <a href="#contact" class="border border-teal text-teal hover:bg-teal/10 px-8 py-4 rounded font-mono text-sm transition">
-        Get In Touch
-      </a>
-      <!-- ✨ NEW: External Project Link -->
-      <a 
-        href="https://xampfiresource-rers.vercel.app/" 
-        target="_blank" 
-        rel="noopener noreferrer"
-        class="bg-teal text-navy-900 hover:bg-teal/90 px-8 py-4 rounded font-mono text-sm transition flex items-center gap-2"
-      >
-        <i class="fa-solid fa-rocket"></i>
-        View Xampfire Source
-      </a>
-    </div>
-  </div>
+    <!-- Button Group -->
+  <!-- Button Group -->
+<div class="flex flex-wrap gap-4">
+  <a href="#contact" class="border border-teal text-teal hover:bg-teal/10 px-8 py-4 rounded font-mono text-sm transition">
+    Get In Touch
+  </a>
+  
+  <!-- ✨ Xampfire Source: Match style + attention-grabbing glow -->
+  <a 
+    href="https://xampfiresource-rers.vercel.app/" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    class="border border-teal text-teal hover:bg-teal/10 px-8 py-4 rounded font-mono text-sm transition flex items-center gap-2 relative group"
+  >
+    <!-- Glow effect on hover -->
+    <span class="absolute inset-0 rounded bg-teal/20 blur opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+    <i class="fa-solid fa-rocket relative z-10 group-hover:animate-bounce"></i>
+    <span class="relative z-10">View Xampfire Source</span>
+  </a>
+</div>
 </header>
 
     <!-- ABOUT SECTION -->
