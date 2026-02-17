@@ -10,7 +10,7 @@
     "tailwind:watch": "tailwindcss -i ./src/input.css -o ./src/output.css --watch",
     "tailwind:build": "tailwindcss -i ./src/input.css -o ./src/output.css --minify",
     "esbuild:watch": "esbuild src/main.js --bundle --platform=browser --format=esm --outfile=src/app.js --watch",
-    "esbuild:build": "esbuild src/main.js --bundle --platform=browser --format=esm --outfile=src/app.js --minify"
+    "esbuild:build": "esbuild src/main.js --bundle --platform=browser --format=esm --outfile=dist/app.js --minify"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.18",
